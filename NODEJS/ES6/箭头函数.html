@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //箭头函数,    在未来的项目开发中  小程序  uniapp  一些脚手架大量使用
+
+        var sum = function(a,b){
+            return a+b;
+
+        }
+
+        //改进
+        var  sum = (a,b) =>{
+            return a+b;
+        }
+
+
+        //再改进
+        var  sum = (a,b) => a+b;
+        
+        // 通过上面的例子  找规律  结合  Java 的Lambda表达式
+        // 1.  去掉function
+        // 2. 在括号后面加箭头
+        // 3. 如果逻辑代码中只有return  可以直接省去
+        // 如果参数只有一个可以括号省去  
+
+        var arr =[1,2,3,4,5];
+        // var newarr =arr.map(function(obj){
+        //     return obj * 3 ;
+        // });
+
+
+        //改变
+        var newarr =arr.map((obj) => obj * 3 );
+
+        console.log(newarr);
+
+        
+
+    </script>
+</body>
+</html>
