@@ -11,9 +11,19 @@
         //字符串会牵涉到动态部分 
         var person ={
             name : "赵默",
+            address: "南头古城",
             link: "http://www.saymealound.com"
         }
-        let address = "我是"+peron.name+"我正在学习ES6";
+        let address = "我是"+person.name+"正在"+person.address+"我正在"+person.link+"上学习ES6";
+
+        console.log(address);
+
+        //es6的模板字符串方法   //支持类似jsp  取值  并且支持换行
+        let address2 = `我是${person.name}正在
+        ${person.address}"我正在
+        ${person.link}上学习ES6`;
+
+        console.log(address2);
 
 
     </script>
